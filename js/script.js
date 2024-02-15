@@ -1,30 +1,11 @@
-document.getElementById('convert').onclick = tempConvert;
-document.getElementById('clear').onclick = clearForm;
+function konversi(){
+    let input = document.getElementById("celcius").value;
+    let hasil = input * (9/5) + 32 ;
+    document.getElementById("fahrenheit").value = hasil
 
-function tempConvert() {
-    var fahrenheit = document.getElementById("fahrenheit").value;
-    var celcius = document.getElementById("celcius").value;
-
-    if (fahrenheit != '') {
-        celcius = (parseFloat(fahrenheit) - 32) /1.8;
-    } else {
-        fahrenheit = (parseFloat(celcius) * 1.8) + 32;
-    }
-
-    document.getElementById("fahrenheit").value = parseFloat(fahrenheit).toFixed(1);
-    document.getElementById("celcius").value = parseFloat(celcius).toFixed(1);
 }
 
-function clearForm() {
-    document.getElementById("fahrenheit").value = '';
-    document.getElementById("celcius").value = '';
+function reset (){
+    document.getElementById("celcius").value = "";
+    document.getElementById("fahrenheit").value = "";
 }
-
-// function peringatan(){
-//     let pertama = document.getElementById("angka-pertama").value;
-//     let kedua = document.getElementById("angka-kedua").value;
-
-//     let hasil = parseInt(pertama) + parseInt(kedua);
-
-//     console.log(hasil)
-// }
