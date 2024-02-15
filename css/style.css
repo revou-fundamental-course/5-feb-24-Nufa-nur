@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: math;
+}
+
+body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 380px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid rgb(210, 205, 205);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin-bottom: 15px;
+}
+
+button  {
+    font-weight: 540;
+    padding: 9px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.konvers {
+    background-color: #3559E0;
+}
+
+.reset {
+    background-color: #D24545;
+}
+
+.reserv {
+    background-color: #65B741;
+}
+
+.konvers:hover {
+    background-color: #1533a0;
+}
+
+.reset:hover {
+    background-color: #b11919;
+}
+
+.reserv:hover {
+    background-color: #3b9017;
+}
+
+a {
+    margin-bottom: 10px;
+}
+
+.keterangan {
+    margin-top: 15px;
+}
